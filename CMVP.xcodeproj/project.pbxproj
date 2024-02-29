@@ -14,6 +14,8 @@
 		04AA03862B9018F700B13D9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AA03852B9018F700B13D9F /* Assets.xcassets */; };
 		04AA03892B9018F700B13D9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AA03872B9018F700B13D9F /* LaunchScreen.storyboard */; };
 		04AA038C2B9018F700B13D9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AA038B2B9018F700B13D9F /* main.m */; };
+		04AA039C2B90285D00B13D9F /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AA039B2B90285D00B13D9F /* Shop.m */; };
+		04AA039F2B902E6A00B13D9F /* ShopPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AA039E2B902E6A00B13D9F /* ShopPresenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		04AA03882B9018F700B13D9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04AA038A2B9018F700B13D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04AA038B2B9018F700B13D9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04AA039A2B9027E500B13D9F /* Shop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shop.h; sourceTree = "<group>"; };
+		04AA039B2B90285D00B13D9F /* Shop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shop.m; sourceTree = "<group>"; };
+		04AA039D2B902E5B00B13D9F /* ShopPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShopPresenter.h; sourceTree = "<group>"; };
+		04AA039E2B902E6A00B13D9F /* ShopPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopPresenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 		04AA03782B9018F400B13D9F /* CMVP */ = {
 			isa = PBXGroup;
 			children = (
+				04AA038A2B9018F700B13D9F /* Info.plist */,
 				04AA03992B9021E400B13D9F /* Resources */,
 				04AA03982B9021D800B13D9F /* SupportingFiles */,
 				04AA03972B9021A400B13D9F /* Presenters */,
@@ -74,6 +81,8 @@
 		04AA03922B90215A00B13D9F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				04AA039A2B9027E500B13D9F /* Shop.h */,
+				04AA039B2B90285D00B13D9F /* Shop.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -97,6 +106,8 @@
 		04AA03972B9021A400B13D9F /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				04AA039D2B902E5B00B13D9F /* ShopPresenter.h */,
+				04AA039E2B902E6A00B13D9F /* ShopPresenter.m */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -118,7 +129,6 @@
 			children = (
 				04AA03872B9018F700B13D9F /* LaunchScreen.storyboard */,
 				04AA03852B9018F700B13D9F /* Assets.xcassets */,
-				04AA038A2B9018F700B13D9F /* Info.plist */,
 				04AA03822B9018F400B13D9F /* Main.storyboard */,
 			);
 			path = Resources;
@@ -140,6 +150,8 @@
 			dependencies = (
 			);
 			name = CMVP;
+			packageProductDependencies = (
+			);
 			productName = CMVP;
 			productReference = 04AA03762B9018F400B13D9F /* CMVP.app */;
 			productType = "com.apple.product-type.application";
@@ -167,6 +179,8 @@
 				Base,
 			);
 			mainGroup = 04AA036D2B9018F400B13D9F;
+			packageReferences = (
+			);
 			productRefGroup = 04AA03772B9018F400B13D9F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -194,9 +208,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AA039C2B90285D00B13D9F /* Shop.m in Sources */,
 				04AA03812B9018F400B13D9F /* ViewController.m in Sources */,
 				04AA037B2B9018F400B13D9F /* AppDelegate.m in Sources */,
 				04AA038C2B9018F700B13D9F /* main.m in Sources */,
+				04AA039F2B902E6A00B13D9F /* ShopPresenter.m in Sources */,
 				04AA037E2B9018F400B13D9F /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -325,7 +341,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

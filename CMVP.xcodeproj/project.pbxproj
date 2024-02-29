@@ -16,6 +16,7 @@
 		04AA038C2B9018F700B13D9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AA038B2B9018F700B13D9F /* main.m */; };
 		04AA039C2B90285D00B13D9F /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AA039B2B90285D00B13D9F /* Shop.m */; };
 		04AA039F2B902E6A00B13D9F /* ShopPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AA039E2B902E6A00B13D9F /* ShopPresenter.m */; };
+		04AA03B22B908D6D00B13D9F /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AA03B12B908D6D00B13D9F /* UIViewController+Tracking.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		04AA039B2B90285D00B13D9F /* Shop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shop.m; sourceTree = "<group>"; };
 		04AA039D2B902E5B00B13D9F /* ShopPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShopPresenter.h; sourceTree = "<group>"; };
 		04AA039E2B902E6A00B13D9F /* ShopPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopPresenter.m; sourceTree = "<group>"; };
+		04AA03B12B908D6D00B13D9F /* UIViewController+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
+		04AA03B32B908D9E00B13D9F /* UIViewController+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				04AA037C2B9018F400B13D9F /* SceneDelegate.h */,
 				04AA037D2B9018F400B13D9F /* SceneDelegate.m */,
 				04AA038B2B9018F700B13D9F /* main.m */,
+				04AA03B32B908D9E00B13D9F /* UIViewController+Tracking.h */,
+				04AA03B12B908D6D00B13D9F /* UIViewController+Tracking.m */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 				04AA037B2B9018F400B13D9F /* AppDelegate.m in Sources */,
 				04AA038C2B9018F700B13D9F /* main.m in Sources */,
 				04AA039F2B902E6A00B13D9F /* ShopPresenter.m in Sources */,
+				04AA03B22B908D6D00B13D9F /* UIViewController+Tracking.m in Sources */,
 				04AA037E2B9018F400B13D9F /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

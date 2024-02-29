@@ -61,19 +61,67 @@
 		04AA03782B9018F400B13D9F /* CMVP */ = {
 			isa = PBXGroup;
 			children = (
+				04AA03992B9021E400B13D9F /* Resources */,
+				04AA03982B9021D800B13D9F /* SupportingFiles */,
+				04AA03972B9021A400B13D9F /* Presenters */,
+				04AA03952B90218500B13D9F /* Networking */,
+				04AA03942B90217000B13D9F /* Views */,
+				04AA03922B90215A00B13D9F /* Models */,
+			);
+			path = CMVP;
+			sourceTree = "<group>";
+		};
+		04AA03922B90215A00B13D9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04AA03942B90217000B13D9F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04AA037F2B9018F400B13D9F /* ViewController.h */,
+				04AA03802B9018F400B13D9F /* ViewController.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04AA03952B90218500B13D9F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		04AA03972B9021A400B13D9F /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		04AA03982B9021D800B13D9F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				04AA03792B9018F400B13D9F /* AppDelegate.h */,
 				04AA037A2B9018F400B13D9F /* AppDelegate.m */,
 				04AA037C2B9018F400B13D9F /* SceneDelegate.h */,
 				04AA037D2B9018F400B13D9F /* SceneDelegate.m */,
-				04AA037F2B9018F400B13D9F /* ViewController.h */,
-				04AA03802B9018F400B13D9F /* ViewController.m */,
-				04AA03822B9018F400B13D9F /* Main.storyboard */,
-				04AA03852B9018F700B13D9F /* Assets.xcassets */,
-				04AA03872B9018F700B13D9F /* LaunchScreen.storyboard */,
-				04AA038A2B9018F700B13D9F /* Info.plist */,
 				04AA038B2B9018F700B13D9F /* main.m */,
 			);
-			path = CMVP;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		04AA03992B9021E400B13D9F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04AA03872B9018F700B13D9F /* LaunchScreen.storyboard */,
+				04AA03852B9018F700B13D9F /* Assets.xcassets */,
+				04AA038A2B9018F700B13D9F /* Info.plist */,
+				04AA03822B9018F400B13D9F /* Main.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

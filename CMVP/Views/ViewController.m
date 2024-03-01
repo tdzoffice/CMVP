@@ -6,8 +6,13 @@
 //
 
 #import "ViewController.h"
+#import "ShopPresenter.h"
+#import "ShopListCVC.h"
 
-@interface ViewController () <UICollectionViewDelegateFlowLayout>
+@interface ViewController () <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, ShopPresenterDelegate>
+
+@property (nonatomic, strong) ShopPresenter *shopPresenter;
+@property (nonatomic, strong) NSArray<Shop *> *shops;
 
 @end
 
@@ -24,12 +29,18 @@
     self.shopListCollectionView.dataSource = self;
     self.shopListCollectionView.delegate = self;
     self.shopListCollectionView.collectionViewLayout = [self collectionViewFlowLayout];
+    
+    // Initialize shop presenter and set its delegate
+    self.shopPresenter = [[ShopPresenter alloc] init];
+    self.shopPresenter.delegate = self;
+    
+    // Fetch shop data
+    [self.shopPresenter fetchShopData];
 }
 
 - (UICollectionViewFlowLayout *)collectionViewFlowLayout {
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
-    // Adjust item size to fit one cell per row
     flowLayout.itemSize = CGSizeMake(self.shopListCollectionView.frame.size.width, 95);
     flowLayout.minimumLineSpacing = 10;
     flowLayout.minimumInteritemSpacing = 0;
@@ -39,21 +50,36 @@
 #pragma mark - UICollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    // Return the number of items in your collection view
-    return 9;
+    return self.shops.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    // Dequeue reusable cell and cast it to ShopListCVC
     ShopListCVC *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ShopListCVC" forIndexPath:indexPath];
     
-    // Configure the cell with your data
-    // For example:
-    // cell.cellName.text = /* your cell name */;
-    // cell.cellDesc.text = /* your cell description */;
+    // Configure the cell with shop data
+    Shop *shop = self.shops[indexPath.item];
+    cell.cellName.text = shop.name;
+    cell.cellDesc.text = shop.shopDescription;
     
     return cell;
 }
 
-@end
+#pragma mark - ShopPresenterDelegate
 
+- (void)shopDataFetchedSuccessfully:(NSArray<Shop *> *)shops {
+    // Update shops array and reload collection view
+    self.shops = shops;
+    
+    // Reload collection view on the main thread
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.shopListCollectionView reloadData];
+    });
+    
+}
+
+- (void)shopDataFetchingFailedWithError:(NSError *)error {
+    // Handle error (e.g., show alert)
+    NSLog(@"Shop data fetching failed with error: %@", error);
+}
+
+@end

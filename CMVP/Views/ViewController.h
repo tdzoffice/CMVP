@@ -6,9 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ShopListCVC.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
+@property (weak, nonatomic) IBOutlet UICollectionView *shopListCollectionView;
 
 
 @end
+
+
 

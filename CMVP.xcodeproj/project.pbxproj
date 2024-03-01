@@ -17,6 +17,10 @@
 		04AA039C2B90285D00B13D9F /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AA039B2B90285D00B13D9F /* Shop.m */; };
 		04AA039F2B902E6A00B13D9F /* ShopPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AA039E2B902E6A00B13D9F /* ShopPresenter.m */; };
 		04AA03B22B908D6D00B13D9F /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AA03B12B908D6D00B13D9F /* UIViewController+Tracking.m */; };
+		04BC3DCE2B918F4500672033 /* ShopDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BC3DCD2B918F4500672033 /* ShopDetail.storyboard */; };
+		04BC3DD12B918FA100672033 /* ShopDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BC3DD02B918FA100672033 /* ShopDetailVC.m */; };
+		04BC3DD52B91915400672033 /* ShopListCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BC3DD32B91915400672033 /* ShopListCVC.m */; };
+		04BC3DD62B91915400672033 /* ShopListCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BC3DD42B91915400672033 /* ShopListCVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,12 @@
 		04AA039E2B902E6A00B13D9F /* ShopPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopPresenter.m; sourceTree = "<group>"; };
 		04AA03B12B908D6D00B13D9F /* UIViewController+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
 		04AA03B32B908D9E00B13D9F /* UIViewController+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
+		04BC3DCD2B918F4500672033 /* ShopDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShopDetail.storyboard; sourceTree = "<group>"; };
+		04BC3DCF2B918FA100672033 /* ShopDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShopDetailVC.h; sourceTree = "<group>"; };
+		04BC3DD02B918FA100672033 /* ShopDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopDetailVC.m; sourceTree = "<group>"; };
+		04BC3DD22B91915400672033 /* ShopListCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShopListCVC.h; sourceTree = "<group>"; };
+		04BC3DD32B91915400672033 /* ShopListCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopListCVC.m; sourceTree = "<group>"; };
+		04BC3DD42B91915400672033 /* ShopListCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopListCVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +105,10 @@
 			children = (
 				04AA037F2B9018F400B13D9F /* ViewController.h */,
 				04AA03802B9018F400B13D9F /* ViewController.m */,
+				04BC3DCF2B918FA100672033 /* ShopDetailVC.h */,
+				04BC3DD02B918FA100672033 /* ShopDetailVC.m */,
+				04BC3DD22B91915400672033 /* ShopListCVC.h */,
+				04BC3DD32B91915400672033 /* ShopListCVC.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -135,6 +149,8 @@
 				04AA03872B9018F700B13D9F /* LaunchScreen.storyboard */,
 				04AA03852B9018F700B13D9F /* Assets.xcassets */,
 				04AA03822B9018F400B13D9F /* Main.storyboard */,
+				04BC3DD42B91915400672033 /* ShopListCVC.xib */,
+				04BC3DCD2B918F4500672033 /* ShopDetail.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -201,6 +217,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				04AA03892B9018F700B13D9F /* LaunchScreen.storyboard in Resources */,
+				04BC3DCE2B918F4500672033 /* ShopDetail.storyboard in Resources */,
+				04BC3DD62B91915400672033 /* ShopListCVC.xib in Resources */,
 				04AA03862B9018F700B13D9F /* Assets.xcassets in Resources */,
 				04AA03842B9018F400B13D9F /* Main.storyboard in Resources */,
 			);
@@ -214,12 +232,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				04AA039C2B90285D00B13D9F /* Shop.m in Sources */,
+				04BC3DD52B91915400672033 /* ShopListCVC.m in Sources */,
 				04AA03812B9018F400B13D9F /* ViewController.m in Sources */,
 				04AA037B2B9018F400B13D9F /* AppDelegate.m in Sources */,
 				04AA038C2B9018F700B13D9F /* main.m in Sources */,
 				04AA039F2B902E6A00B13D9F /* ShopPresenter.m in Sources */,
 				04AA03B22B908D6D00B13D9F /* UIViewController+Tracking.m in Sources */,
 				04AA037E2B9018F400B13D9F /* SceneDelegate.m in Sources */,
+				04BC3DD12B918FA100672033 /* ShopDetailVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
